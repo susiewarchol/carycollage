@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collage with Words</title>
+
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: white;
+		}
+
+		.container {
+			background: black;
+			min-height: 100vh;
+			
+			display: grid;
+			grid-template-columns: 3fr 2fr 2fr 3fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas: 
+				"p1 p1 p2 p2"
+				"p3 w w p4"
+				"p5 p5 p6 p6";
+			grid-gap: 10px;
+			padding: 10px;
+		}
+
+		.item {
+			background: blue;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		#photo1 {
+			grid-area: p1;
+			background: url(trip1.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo2 {
+			grid-area: p2;
+			background: url(trip2.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo3 {
+			grid-area: p3;
+			background: url(trip3.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo4 {
+			grid-area: p4;
+			background: url(trip4.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo5 {
+			grid-area: p5;
+			background: url(trip5.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo6 {
+			grid-area: p6;
+			background: url(trip6.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#words {
+			grid-area: w;
+			display: grid;
+			justify-content: center;
+			align-items: center;
+			font-size: 40px;
+			font-family: cursive;
+			color: black;
+			background: url(https://www.thomann.de/pics/bdb/195666/11833105_800.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item" id="photo1">
+		</div>
+
+		<div class="item" id="photo2">
+		</div>
+
+		<div class="item" id="photo3">
+		</div>
+
+		<div class="item" id="photo4">
+		</div>
+
+		<div class="item" id="photo5">
+		</div>
+
+		<div class="item" id="photo6">
+		</div>
+
+		<div class="item" id="words"> 
+		<h1>Scotland</h1>
+		</div>
+	</div>
+
+
+</body>
+</html>
